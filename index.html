@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>RUDIRON</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="libs/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/main-media.css">
+	<link rel="stylesheet" href="./css/desktop.css">
+	<link rel="stylesheet" href="./css//mobile.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header id="header" class="header">
+			<div class="header__container _container">
+				<a href="index.html" class="header__logo">
+					<img src="img/logo.svg" alt="logo" class="logo">
+				</a>
+				<button aria-label="Меню" class="header__burger button-reset"></button>
+				<nav class="header__menu menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="index.html" class="menu__link">Главная</a>
+						</li>
+						<li class="menu__item">
+							<a href="docs.html" class="menu__link">Документация</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link">Модули</a>
+						</li>
+						<li class="menu__item">
+							<a href="support.html" class="menu__link">Поддержка</a>
+						</li>
+					</ul>
+				</nav>
+			</div>		
+		</header>	
+		<main id="main" class="main">	
+			<div class="main__container _container">
+				<div class="main__offer">
+					<div class="main__information">
+						<h1 class="main__title"><span class="main__title-shadow">РУДИРОН</span>РУДИРОН</h1>
+						<p class="main__text">Российский образовательный программно-аппаратный комплекс. Микроконтролер,
+							 который упрощает проектирование и кодирование, ожидает вас для ваших образовательных и промышленных проектов! </p>
+							 <a href="" class="info-download__button button-two">Скачать дистрибутив<span class="button__download-icon"></span></a>
+
+					</div>
+					
+
+					<img src="img/plate.png" alt="" class="main__image">
+				</div>
+			</div>
+		</main>
+
+		<section id="section" class="section">
+			<div class="section__container _container">
+				
+					<div class="section__about">
+						
+						<h2 class="about__title">МЫ ЭТО</h2>
+						<p class="about__text">Уникальный Российский образовательный ПАК на базе
+							32-разрядного микроконтроллера К1986ВЕ92! Тактовая частота 80 МГц, 128 кБ ПЗУ и 32 кБ ОЗУ гарантируют мощную производительность. Конфигурируемые 9 портов с ШИМ, 
+						   12 каналов АЦП и ЦАП обеспечивают гибкость и адаптивность 
+						   к любым вашим проектам. Кодируйте на популярном языке C++ 
+						   с удобно знакомыми функциями, как в Arduino. </p>
+						<div class="about__buttons">
+							<a class="about__button btn_about  button-one" onclick="togglePopup()">Подробнее о рудироне</a>
+
+								<div class="popup" id="popup">
+									<img src="img/close.svg" alt="" class="close-btn" onclick="togglePopup()">
+									<div class="slider">
+										<h2 class="slyder__title">РУДИРОН</h2>
+										
+										<div class="slides" id="slides">
+											
+											<div class="slide slider__block">
+												<p>1. Построен на базе отечественного 32-разрядного микроконтроллера К1986ВЕ92 с тактовой частотой 80 МГц.</p>
+												<p>2. ПЗУ 128 кБ – ОЗУ – 32 кБ</p>
+												<p>3. Количество портов с ШИМ – до 9. Количество каналов АЦП – до 12. Количество ЦАП - 1</p>
+												<p>4. Внутрисхемная отладка – используется разъем на плате для подключения J-Link программатора и пошаговой отладки с просмотром содержимого микроконтроллера.</p>
+												<p>5. Разработка кода и программирование может осуществляться на любой операционной системе. Библиотеки на С++ копируют названия функций Arduino.</p>
+											</div>
+											<div class="slide slider__block">
+												<p>6. Дополнительно к контроллеру разработаны модули для промышленных интерфейсов RS485 и CAN (реализованы на отечественных микросхемах). На плате контроллера присутствуют отдельные разъемы для их быстрой установки.</p>
+												<p>7. Контроллер позволяет масштабировать себя — разъемы установлены так, что контроллеры могут нанизываться друг на друга с автоматической организацией связи по CAN-интерфейсу. Мы получаем многопроцессорный контроллер с огромным количеством цифровых портов и разнообразных устройств.</p>
+												<p>8. Контроллер позволяет старшеклассникам и студентам использовать операционные системы реального времени.</p>
+												
+											</div>
+											<div class="slide slider__block">
+												<p>9. Под радиомодули выделены отдельные разъемы для прямого подключения без использования проводов с отдельным стабилизатором питания 3.3 вольта на плате контроллера.</p>
+												<p>10. Контроллер позволяет подключать сразу четыре модуля без использования проводов и дополнительных плат расширения — радиомодули, ЖК-экран, гироскоп с акселерометром , один из модулей интерфейсов CAN, RS485, RS232.</p>
+												
+											</div>
+										</div>
+									</div>
+
+									
+									<div class="controls">
+										<button onclick="prevSlide()"><img src="img/slider_previous.svg" alt="" class="btn__previous"></button>
+										<button onclick="nextSlide()"><img src="img/slider_next.svg" alt=""class="btn__next"></button>
+									</div>
+								</div>
+							
+							<a href="" class="about__button button-two btn2">Подробнее в чат-боте</a>
+						</div>
+		
+					</div>
+			</div>
+		</section>
+
+
+		<section id="for-whom" class="for-whom">
+			<div class="for-whom__container">
+		
+					<div class="for-whom-section">
+						<h2 class="for-whom__title">ДЛЯ КОГО МЫ</h2>
+						<div class="from-whom__cards">
+							<div class="from-whom__card">
+								<img src="img/image1.png" alt="" class="card__img">
+								<div class="cardinftext">
+								<h3 class="card__title">ДЛЯ ШКОЛ</h3>
+								<p class="card__text">Для улучшения качества образования, подготовки учеников
+									к использованию современных технологий, интерактивных занятий 
+									и развития компьютерных навыков.</p>
+								</div>
+								</div>
+							<div class="from-whom__card from-whom__card1">
+								<img src="img/image2.png" alt="" class="card__img">
+									
+								<div class="cardinftext">
+									<h3 class="card__title">ДЛЯ КОЛЛЕДЖЕЙ
+										И ВУЗОВ</h3>
+									<p class="card__text">Для обучения студентов, проведения лабораторных исследований, подготовки специалистов 
+										и разработки новых технологий.</p>
+								</div>
+							</div>
+							<div class="from-whom__card">
+								<img src="img/image3.png" alt="" class="card__img">
+								<div class="cardinftext">
+								<h3 class="card__title">ДЛЯ КВАНТОРИУМОВ И ИТ-КЛУБОВ</h3>
+								<p class="card__text">Для обучения программированию, робототехнике, разработке игр 
+									и другим цифровым навыкам,
+									что помогает им развивать творческое мышление </p>
+							</div>
+						</div>
+						</div>
+		
+		
+					</div>
+			</div>
+		</section>
+		<section id="plate" class="plate">
+		<div class="mouse_wrapp" id="mouse_wrapp">
+			<img src="./img/mouse.svg" alt="Мышка" class="mouse" id="mouse">
+			<img src="./img/rudiron.svg" alt="Рудирон" class="rudiron">
+		  </div>
+		  <div class="wrapp" id="wrapp">
+			<img src="./img/sun.svg" alt="Задний фон" class="sun">
+			<div class="map" id="map">
+			  <div class="item-1-1" onmouseover="item_over(['item-1-1__info-1', 'item-1-1__info-2', 'item-1-1__border-1', 'item-1-1__border-2'])" onmouseout="item_out(['item-1-1__info-1', 'item-1-1__info-2', 'item-1-1__border-1', 'item-1-1__border-2'])">
+				<img src="./img/desktop/item-1-1.svg" id="item-1-1__info-1" alt="GPIO-1" class="item-1-1__info-1">
+				<div class="item-1-1__border-1" id="item-1-1__border-1"></div>
+				<img src="./img/desktop/item-1-2.svg" id="item-1-1__info-2" alt="Разъем для TFT модуля" class="item-1-1__info-2">
+				<div class="item-1-1__border-2" id="item-1-1__border-2"></div>
+			  </div>
+			  <div class="item_1_2" onmouseover="item_over(['item-1-2__border-1', 'item-1-2__info-1', 'item-1-2__border-2', 'item-1-2__border-3', 'item-1-2__info-2'])" onmouseout="item_out(['item-1-2__border-1', 'item-1-2__info-1', 'item-1-2__border-2', 'item-1-2__border-3', 'item-1-2__info-2'])">
+				<img src="./img/desktop/item-1-3.svg" id="item-1-2__info-1" alt="Пользовательские индикаторы и кнопки" class="item-1-2__info-1">
+				<div class="item-1-2__border-1" id="item-1-2__border-1"></div>
+				<img src="./img/desktop/item-1-4.svg" id="item-1-2__info-2" alt="Модуль расширения CAN/UART" class="item-1-2__info-2">
+				<div class="item-1-2__border-2" id="item-1-2__border-2"></div>
+				<div class="item-1-2__border-3" id="item-1-2__border-3"></div>
+			  </div>
+			  <div class="item_1_3" onmouseover="item_over(['item-1-3__border-1', 'item-1-3__info-1'])" onmouseout="item_out(['item-1-3__border-1', 'item-1-3__info-1'])">
+				<img src="./img/desktop/item-1-5.svg" id="item-1-3__info-1" alt="GPIO-2"  class="item-1-3__info-1">
+				<div class="item-1-3__border-1" id="item-1-3__border-1"></div>
+			  </div>
+			  <div class="item_2_1" onmouseover="item_over(['item-2-1__info-1', 'item-2-1__border-1', 'item-2-1__info-2', 'item-2-1__border-2', 'item-2-1__info-3', 'item-2-1__border-3'])"  onmouseout="item_out(['item-2-1__info-1', 'item-2-1__border-1', 'item-2-1__info-2', 'item-2-1__border-2', 'item-2-1__info-3', 'item-2-1__border-3'])">
+				<img src="./img/desktop/item-2-1.svg" id="item-2-1__info-1" alt="Внешнее питание" class="item-2-1__info-1">
+				<div class="item-2-1__border-1" id="item-2-1__border-1"></div>
+				<img src="./img/desktop/item-2-2.svg" id="item-2-1__info-2" alt="Индикатор питания" class="item-2-1__info-2">
+				<div class="item-2-1__border-2" id="item-2-1__border-2"></div>
+				<img src="./img/desktop/item-2-3.svg" id="item-2-1__info-3" alt="Выбор источника питания" class="item-2-1__info-3">
+				<div class="item-2-1__border-3" id="item-2-1__border-3"></div>
+			  </div>
+			  <div class="item_2_2" onmouseover="item_over(['item-2-2__info-1', 'item-2-2__border-1', 'item-2-2__border-2', 'item-2-2__info-2', 'item-2-2__border-2', 'item-2-2__info-3', 'item-2-2__border-3',  'item-1-2__border-2',  'item-1-2__info-2', 'item-1-2__border-3'])"  onmouseout="item_out(['item-2-2__info-1', 'item-2-2__border-1', 'item-2-2__border-2','item-2-2__border-2', 'item-2-2__info-2', 'item-2-2__border-2', 'item-2-2__info-3', 'item-2-2__border-3', 'item-1-2__border-2',  'item-1-2__info-2', 'item-1-2__border-3'])">
+				<img src="./img/desktop/item-2-4.svg" id="item-2-2__info-1" alt="Микроконтроллер K1986BE92QI" class="item-2-2__info-1">
+				<div class="item-2-2__border-1" id="item-2-2__border-1"></div>
+				<img src="./img/desktop/item-2-5.svg" id="item-2-2__info-2" alt="Программирование по USB" class="item-2-2__info-2">
+				<div class="item-2-2__border-2" id="item-2-2__border-2"></div>
+				<img src="./img/desktop/item-2-6.svg" id="item-2-2__info-3" alt="Индикатор UART" class="item-2-2__info-3">
+				<div class="item-2-2__border-3" id="item-2-2__border-3"></div>
+			  </div>
+			  <div class="item_2_3" onmouseover="item_over(['item-2-3__info-1', 'item-2-3__border-1', 'item-2-3__info-2', 'item-2-3__border-2', 'item-2-3__info-3', 'item-2-3__border-3', 'item-2-3__border-4'])" onmouseout="item_out(['item-2-3__info-1', 'item-2-3__border-1', 'item-2-3__info-2', 'item-2-3__border-2', 'item-2-3__info-3', 'item-2-3__border-3', 'item-2-3__border-4'])">
+				<img src="./img/desktop/item-2-7.svg" id="item-2-3__info-1" alt="Модуль расширения CAN/UART" class="item-2-3__info-1">
+				<div class="item-2-3__border-1" id="item-2-3__border-1"></div>
+				<img src="./img/desktop/item-2-8.svg" id="item-2-3__info-2" alt="Кнопка пробуждения" class="item-2-3__info-2">
+				<div class="item-2-3__border-2" id="item-2-3__border-2"></div>
+				<img src="./img/desktop/item-2-9.svg" id="item-2-3__info-3" alt="Интерфейс J-Link программатора" class="item-2-3__info-3">
+				<div class="item-2-3__border-3" id="item-2-3__border-3"></div>
+				<div class="item-2-3__border-4" id="item-2-3__border-4"></div>
+			  </div>
+			  <div class="item_3_1" onmouseover="item_over(['item-3-1__info-1', 'item-3-1__border-1', 'item-3-1__border-2', 'item-3-1__info-2', 'item-3-1__border-3'])" onmouseout="item_out(['item-3-1__info-1', 'item-3-1__border-1','item-3-1__border-2', 'item-3-1__info-2', 'item-3-1__border-3'])">
+				<img src="./img/desktop/item-3-1.svg" id="item-3-1__info-1" alt="Питание радиомодуля" class="item-3-1__info-1">
+				<!-- <img src="./img//item-3-4.svg" id="item-3-1__info-1" alt="Питание радиомодуля" class="item-3-1__info-1"> -->
+				<div class="item-3-1__border-1" id="item-3-1__border-1"></div>
+				<div class="item-3-1__border-2" id="item-3-1__border-2"></div>
+				<div class="item-3-1__border-3" id="item-3-1__border-3"></div>
+			  </div>
+			  <div class="item_3_2" onmouseover="item_over(['item-3-2__info-1', 'item-3-2__border-1', 'item-3-2__border-2', 'item-3-2__border-3', 'item-3-2__border-4', 'item-3-1__info-1', 'item-3-1__border-1', 'item-3-1__border-3', 'item-2-2__info-1', 'item-2-2__border-1'])" onmouseout="item_out(['item-3-2__info-1', 'item-3-2__border-1', 'item-3-2__border-2', 'item-3-2__border-3', 'item-3-2__border-4', 'item-3-1__info-1', 'item-3-1__border-1', 'item-3-1__border-3', 'item-2-2__info-1', 'item-2-2__border-1'])">
+				<img src="./img/desktop/item-3-2.svg" id="item-3-2__info-1" alt="" class="item-3-2__info-1">
+				<div class="item-3-2__border-1" id="item-3-2__border-1"></div>
+				<div class="item-3-2__border-2" id="item-3-2__border-2"></div>
+				<div class="item-3-2__border-3" id="item-3-2__border-3"></div>
+				<div class="item-3-2__border-4" id="item-3-2__border-4"></div>
+			  </div>
+			  <div class="item_3_3" onmouseover="item_over(['item-3-3__border-1', 'item-3-3__info-1', 'item-2-3__info-2', 'item-2-3__border-2'])" onmouseout="item_out(['item-3-3__border-1', 'item-3-3__info-1', 'item-2-3__info-2', 'item-2-3__border-2'])">
+				<img src="./img/desktop/item-3-3.svg" id="item-3-3__info-1" alt="nRF24L01" class="item-3-3__info-1">
+				<div class="item-3-3__border-1" id="item-3-3__border-1"></div>
+			  </div>
+			</div>
+		
+		
+			
+			<div class="map_mobile map" id="map_mobile">
+			  <div class="item-1-1" onmouseover="item_over(['item-1-1__info-1_mobile', 'item-1-1__info-2_mobile', 'item-1-1__border-1_mobile', 'item-1-1__border-2_mobile'])" onmouseout="item_out(['item-1-1__info-1_mobile', 'item-1-1__info-2_mobile', 'item-1-1__border-1_mobile', 'item-1-1__border-2_mobile'])">
+				<img src="./img/mobile/item-1-1.svg" id="item-1-1__info-1_mobile" alt="GPIO-1" class="item-1-1__info-1_mobile mobile">
+				<div class="item-1-1__border-1_mobile" id="item-1-1__border-1_mobile"></div>
+				<img src="./img/mobile/item-1-2.svg" id="item-1-1__info-2_mobile" alt="Разъем для TFT модуля" class="item-1-1__info-2_mobile mobile">
+				<div class="item-1-1__border-2_mobile" id="item-1-1__border-2_mobile"></div>
+			  </div>
+			  <div class="item_1_2" onmouseover="item_over(['item-1-2__info-1_mobile', 'item-1-2__info-2_mobile', 'item-1-2__border-1_mobile', 'item-1-2__border-2_mobile', 'item-1-2__border-3_mobile'])" onmouseout="item_out(['item-1-2__info-1_mobile', 'item-1-2__info-2_mobile', 'item-1-2__border-1_mobile', 'item-1-2__border-2_mobile', 'item-1-2__border-3_mobile'])"  >
+				<img src="./img/mobile/item-1-3.svg" id="item-1-2__info-1_mobile" alt="Пользовательские индикаторы и кнопки" class="item-1-2__info-1_mobile mobile">
+				<div class="item-1-2__border-1_mobile" id="item-1-2__border-1_mobile"></div>
+				<img src="./img/mobile/item-1-4.svg" id="item-1-2__info-2_mobile" alt="Модуль расширения CAN/UART" class="item-1-2__info-2_mobile mobile">
+				<div class="item-1-2__border-2_mobile" id="item-1-2__border-2_mobile"></div>
+				<div class="item-1-2__border-3_mobile" id="item-1-2__border-3_mobile"></div>
+			  </div>
+			  <div class="item_1_3" onmouseover="item_over(['item-1-3__border-1_mobile', 'item-1-3__info-1_mobile'])" onmouseout="item_out(['item-1-3__border-1_mobile', 'item-1-3__info-1_mobile'])">
+				<img src="./img/mobile/item-1-5.svg" id="item-1-3__info-1_mobile" alt="GPIO-2"  class="item-1-3__info-1_mobile mobile">
+				<div class="item-1-3__border-1_mobile" id="item-1-3__border-1_mobile"></div>
+			  </div>
+			  <div class="item_2_1" onmouseover="item_over(['item-2-1__info-1_mobile', 'item-2-1__border-1_mobile', 'item-2-1__info-2_mobile', 'item-2-1__border-2_mobile', 'item-2-1__info-3_mobile', 'item-2-1__border-3_mobile'])"  onmouseout="item_out(['item-2-1__info-1_mobile', 'item-2-1__border-1_mobile', 'item-2-1__info-2_mobile', 'item-2-1__border-2_mobile', 'item-2-1__info-3_mobile', 'item-2-1__border-3_mobile'])">
+				<img src="./img/mobile/item-2-1.svg" id="item-2-1__info-1_mobile" alt="Внешнее питание" class="item-2-1__info-1_mobile mobile">
+				<div class="item-2-1__border-1_mobile" id="item-2-1__border-1_mobile"></div>
+				<img src="./img/mobile/item-2-2.svg" id="item-2-1__info-2_mobile" alt="Индикатор питания" class="item-2-1__info-2_mobile mobile">
+				<div class="item-2-1__border-2_mobile" id="item-2-1__border-2_mobile"></div>
+				<img src="./img/mobile/item-2-3.svg" id="item-2-1__info-3_mobile" alt="Выбор источника питания" class="item-2-1__info-3_mobile mobile">
+				<div class="item-2-1__border-3_mobile" id="item-2-1__border-3_mobile"></div>
+			  </div>
+			  <div class="item_2_2" onmouseover="item_over(['item-2-2__info-1_mobile', 'item-2-2__border-1_mobile', 'item-2-2__border-2_mobile', 'item-2-2__info-2_mobile', 'item-2-2__border-2_mobile', 'item-2-2__info-3_mobile', 'item-2-2__border-3_mobile',  'item-1-2__border-2_mobile',  'item-1-2__info-2_mobile', 'item-1-2__border-3_mobile'])"   onmouseout="item_out(['item-2-2__info-1_mobile', 'item-2-2__border-1_mobile', 'item-2-2__border-2_mobile', 'item-2-2__info-2_mobile', 'item-2-2__border-2_mobile', 'item-2-2__info-3_mobile', 'item-2-2__border-3_mobile',  'item-1-2__border-2_mobile',  'item-1-2__info-2_mobile', 'item-1-2__border-3_mobile'])">
+				<img src="./img/mobile/item-2-4.svg" id="item-2-2__info-1_mobile" alt="Микроконтроллер K1986BE92QI" class="item-2-2__info-1_mobile">
+				<div class="item-2-2__border-1_mobile" id="item-2-2__border-1_mobile"></div>
+				<img src="./img/mobile/item-2-5.svg" id="item-2-2__info-2_mobile" alt="Программирование по USB" class="item-2-2__info-2_mobile">
+				<div class="item-2-2__border-2_mobile" id="item-2-2__border-2_mobile"></div>
+				<img src="./img/mobile/item-2-6.svg" id="item-2-2__info-3_mobile" alt="Индикатор UART" class="item-2-2__info-3_mobile">
+				<div class="item-2-2__border-3_mobile" id="item-2-2__border-3_mobile"></div>
+			  </div>
+			  <div class="item_2_3" onmouseover="item_over(['item-2-3__info-1_mobile', 'item-2-3__border-1_mobile', 'item-2-3__border-2_mobile'])" onmouseout="item_out(['item-2-3__info-1_mobile', 'item-2-3__border-1_mobile', 'item-2-3__border-2_mobile'])">
+				<img src="./img/mobile/item-2-7.svg" id="item-2-3__info-1_mobile" alt="Интерфейс J-Link программатора" class="item-2-3__info-1_mobile mobile">
+				<div class="item-2-3__border-1_mobile" id="item-2-3__border-1_mobile"></div>
+				<div class="item-2-3__border-2_mobile" id="item-2-3__border-2_mobile"></div>
+			  </div>
+			  <div class="item_3_1" onmouseover="item_over(['item-3-1__info-1_mobile', 'item-3-1__border-1_mobile', 'item-3-1__border-2_mobile', 'item-3-1__border-3_mobile', 'item-3-1__info-2_mobile'])" onmouseout="item_out(['item-3-1__info-1_mobile', 'item-3-1__border-1_mobile','item-3-1__border-2_mobile', 'item-3-1__border-3_mobile', 'item-3-1__info-2_mobile'])">
+				<img src="./img/mobile/item-3-1.svg" id="item-3-1__info-1_mobile" alt="GPIO-4" class="item-3-1__info-1_mobile mobile">
+				<img src="./img/mobile/item-3-2.svg" id="item-3-1__info-2_mobile" alt="Питание радиомодуля" class="item-3-1__info-2_mobile mobile">
+				<div class="item-3-1__border-1_mobile" id="item-3-1__border-1_mobile"></div>
+				<div class="item-3-1__border-2_mobile" id="item-3-1__border-2_mobile"></div>
+				<div class="item-3-1__border-3_mobile" id="item-3-1__border-3_mobile"></div>
+			  </div>
+			  <div class="item_3_2" onmouseover="item_over(['item-3-2__info-1_mobile', 'item-3-2__info-2_mobile', 'item-3-2__border-1_mobile', 'item-3-2__border-1_mobile', 'item-3-2__border-2_mobile', 'item-3-2__border-3_mobile', 'item-3-2__border-4_mobile', 'item-3-1__info-2_mobile', 'item-3-1__border-1_mobile', 'item-3-1__border-2_mobile'])" onmouseout ="item_out(['item-3-2__info-1_mobile', 'item-3-2__info-2_mobile', 'item-3-2__border-1_mobile', 'item-3-2__border-1_mobile', 'item-3-2__border-2_mobile', 'item-3-2__border-3_mobile', 'item-3-2__border-4_mobile', 'item-3-1__info-2_mobile', 'item-3-1__border-1_mobile', 'item-3-1__border-2_mobile'])">
+				<img src="./img/mobile/item-3-3.svg" id="item-3-2__info-1_mobile" alt="nRF24L01" class="item-3-2__info-1_mobile mobile">
+				<img src="./img/mobile/item-3-4.svg" id="item-3-2__info-2_mobile" alt="ESP-01" class="item-3-2__info-2_mobile mobile">
+				<div class="item-3-2__border-1_mobile" id="item-3-2__border-1_mobile"></div>
+				<div class="item-3-2__border-2_mobile" id="item-3-2__border-2_mobile"></div>
+				<div class="item-3-2__border-3_mobile" id="item-3-2__border-3_mobile"></div>
+				<div class="item-3-2__border-4_mobile" id="item-3-2__border-4_mobile"></div>
+			  </div>
+			  <div class="item_3_3" onmouseover="item_over(['item-3-3__border-1_mobile', 'item-3-3__info-1_mobile', 'item-3-3__info-2_mobile', 'item-3-3__border-2_mobile'])" onmouseout="item_out(['item-3-3__border-1_mobile', 'item-3-3__info-1_mobile', 'item-3-3__info-2_mobile', 'item-3-3__border-2_mobile'])" >
+				<img src="./img/mobile/item-3-5.svg" id="item-3-3__info-1_mobile" alt="nRF24L01" class="item-3-3__info-1_mobile mobile">
+				<img src="./img/mobile/item-3-6.svg" id="item-3-3__info-2_mobile" alt="nRF24L01" class="item-3-3__info-2_mobile mobile">
+				<div class="item-3-3__border-1_mobile" id="item-3-3__border-1_mobile"></div>
+				<div class="item-3-3__border-2_mobile" id="item-3-3__border-2_mobile"></div>
+			  </div>
+			</div>
+		  </div>
+		</section>
+
+		<section id="rudiron-inf" class="rudiron-inf ">
+	
+			<div class="rudiron-inf__container servcont _container">
+		
+					<div class="rudiron-inf-section">
+						
+						<div class="rudiron-inf__block">
+							<h2 class="rudiron-inf__title">ПОЧЕМУ МЫ?</h2>
+							<p class="rudiron-inf__text">Мы предлагаем надежное и эффективное сочетание программного обеспечения и аппаратных средств, которое поможет вам оптимизировать работу вашего проекта 
+								и избежать технических проблем. </p>
+							<div class="rudiron-infmini__stroke1">	
+			
+							<div class="rudiron-infmini__block1">
+								<h3 class="rudiron-infmini__title rudiron-infmini__title1">ОПТИМИЗАЦИЯ</h3>
+								<p class="rudiron-infmini__text">Легко оптимизируйте
+									и модифицируйте последовательность кода </p>
+							</div>
+							<div class="rudiron-infmini__block">
+								<h3 class="rudiron-infmini__title">МОДУЛЬНОСТЬ</h3>
+								<p class="rudiron-infmini__text">Подключите до 4 модулей без использования проводов</p>
+							</div>
+							</div>
+							<div class="rudiron-infmini__stroke2">
+							<div class="rudiron-infmini__block1">
+								<h3 class="rudiron-infmini__title rudiron-infmini__title1">УДОБСТВО</h3>
+								<p class="rudiron-infmini__text">Кодируйте на популярном языке C++ с удобно знакомыми функциями, 
+									как в Arduino</p>
+							</div>
+							<div class="rudiron-infmini__block">
+								<h3 class="rudiron-infmini__title rudiron-infmini__title1">МОЩНОСТЬ</h3>
+								<p class="rudiron-infmini__text">Обеспечьте гибкость 
+									и адаптивность
+									к любым проектам</p>
+							</div>
+						
+						</div>
+						</div>
+						
+							<img src="img/rudiron.png" alt="" class="rudiron-inf__image">
+						
+		
+		
+					</div>
+			</div>
+		</section>
+
+
+		  
+
+		<section id="server-inf" class="server-inf ">
+	
+			<div class="server-inf__container _container">
+					<div class="server-inf-section">
+						<h2 class="server-inf__title">серверные решения</h2>
+						<div class="server-inf__cards">
+							<div class="server-inf__card">
+								<img src="img/icon1.svg" alt="" class="server-card__img">
+								<h3 class="server-card__title">ПРОТОТИПИРУЙТЕ</h3>
+								<p class="server-card__text">Превращайте контроллер Рудирон в самостоятельное решение автоматизации или объединяйте несколько контроллеров в сеть интернет вещей</p>
+							</div>
+							<div class="server-inf__card">
+								<img src="img/icon2.svg" alt="" class="server-card__img server-card__img1">
+								<h3 class="server-card__title">УСТАНАВЛИВАЙТЕ</h3>
+								<p class="server-card__text">Воспользуйтесь программой установки для развертывания тулчейна свободного ПО для x64/arm машин Windows, MacOS или Linux</p>
+							</div>
+							<div class="server-inf__card">
+								<img src="img/icon3.svg" alt="" class="server-card__img">
+								<h3 class="server-card__title">ПРОГРАММИРУЙТЕ</h3>
+								<p class="server-card__text">Исследуйте и изменяйте библиотеки как вам захочется благодаря свободе исходного кода, гарантированной лицензией GPLv3.</p>
+							</div>
+						</div>
+		
+		
+					</div>
+			</div>
+		</section>
+
+		<footer id="footer" class="footer">
+			<div class="footer__container _container">
+				<h2 class="footer__title">БУДУЩЕЕ ЗА НАМИ</h2>
+			
+			<div class="footer__info">
+				<div class="info-download">
+					<div class="info-download__block">
+						<p class="info-download__text">Скачайте дистрибутив рудирона,
+							сочетающего в себе высокую производительность, разнообразные интерфейсы, множество
+							цифровых портов и удобные возможности подключения внешних устройств</p>
+						<a href="" class="info-download__button button-one">Скачать дистрибутив<span class="button__download-icon"></span></a>
+					</div>
+					<p class="info-download__company-title">OOO «Орион»</p>
+				</div>
+				<div class="info-contact">
+					<p class="info-contact__title">Адрес</p>
+					<p class="info-contact__text">г.Москва, ул.Косинская, д.9</p>
+					<p class="info-contact__title">Телефон</p>
+					<p class="info-contact__text">+7 (499) 374 - 94 - 00</p>
+					<p class="info-contact__title">Почта</p>
+					<p class="info-contact__text">orion@orion-ir.ru</p>
+					<p class="info-contact__title">Доп.ссылки</p>
+					<a href="" class="info-contact__link">Пользовательское соглашение</a>
+					<a href="" class="info-contact__link">Политика конфиденциальностиы</a>
+					<p class="info-contact__company-title">OOO «Орион»</p>
+				</div>	
+			</div>
+			<div class="footer__social-media">
+				<a href="">
+					<img class="footer__icon" src="img/social media/vk.svg" alt="">
+				</a>
+				<a href="">
+					<img class="footer__icon" src="img/social media/tg.svg" alt="">
+				</a>
+				<a href="">
+					<img class="footer__icon" src="img/social media/insta.svg" alt="">
+				</a>
+			</div>
+			</div>		
+		</footer>
+	</div>
+	<script src="libs/swiper-bundle.min.js"></script>
+	<script src="scripts/main.js"></script>
+	<script src="./js/script2.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+</html>

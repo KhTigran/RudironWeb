@@ -1,0 +1,152 @@
+@media (max-width: 1366px) {
+    .main__title {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 992px) { 
+    .main__title {
+        font-size: 20px;
+        line-height: 110%;
+        margin-bottom: 21px;
+    }
+
+    .main__text {
+        margin-bottom: 31px;
+    }
+
+    .form__block {
+        margin-bottom: 110px;
+    }
+
+    ._input { 
+        padding: 12px;
+        height: 35px;
+        font-size: 10px;
+    }
+
+    .form__input-frame {
+        margin-bottom: 20px;
+        border-radius: 5px;
+        max-width: 700px;
+        box-shadow: 0 0 10px 1px #e06121, 0 0 2px 1px #e06121, inset 0 0 3px #e06121;
+    }
+
+    .form__textarea-frame {
+        margin-bottom: 23px;
+        border-radius: 5px;
+        max-width: 700px;
+        box-shadow: 0 0 10px 1px #e06121, 0 0 2px 1px #e06121, inset 0 0 3px #e06121;
+    }
+
+    .form__textarea {
+        padding: 12px;
+        height: 106px;
+    }
+
+    .form__check {
+        max-width: 700px;
+        margin-bottom: 24px;
+    }
+
+    .form__check-text::before {
+        top: 0;
+        left: -1px;
+        width: 20px;
+        height: 20px;
+        background-size: 100% 100%;
+    }
+
+    .form__check-text {
+        padding-left: 34px;
+        font-size: 9px;
+    }
+
+    .form__post-btn {
+        margin-left: 0;
+        padding: 8px 40px;
+    }
+
+    .head-ellipse {
+        background-position: -150px;
+        background-size: 70% 70%;
+    }
+
+    .popup {
+        padding: 20px;
+    }
+
+    .popup__body {
+        height: min-content;
+    }
+    
+    .popup__content {
+        height: min-content;
+        padding: 40px 30px 80px;
+    }
+    
+    .popup__close {
+        right: 10px;
+        top: 10px;
+        width: 25px;
+    }
+    
+    .popup__icon {
+        margin-bottom: 40px;
+        max-width: 150px;
+    }
+    
+    .popup__title {
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+    
+    .popup__text {
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 568px) {    
+    .popup {
+        padding: 20px;
+    }
+
+    .popup__body {
+        max-width: 420px;
+        height: min-content;
+    }
+
+    .popup__content {
+        height: min-content;
+        padding: 20px 10px;
+    }
+
+    .popup__close {
+        right: 5px;
+        top: 5px;
+        width: 20px;
+    }
+
+    .popup__icon {
+        margin-bottom: 20px;
+        max-width: 70px;
+    }
+
+    .popup__title {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .popup__text {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .popup__title {
+        font-size: 9px;
+    }
+    
+    .popup__text {
+        font-size: 9px;
+    }
+}

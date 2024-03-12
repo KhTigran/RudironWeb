@@ -1,0 +1,293 @@
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Начальный размер 0 */
+    background-color: #1B1A1A;
+    padding: 0px 206px 120px 206px;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-height: 80%;
+    overflow: hidden;
+    animation: popupOpen 0.5s forwards; /* Анимация открытия */
+    animation: popupOpen 0.5s forwards; /* Анимация открытия */
+    z-index: 1000; /* На один уровень выше, чем затемнение */
+  }
+  .popup.active {
+    display: block;
+    
+  }
+  .slider {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .slider .slides {
+    display: flex;
+    transition: transform 0.5s ease; /* Плавное перелистывание */
+  }
+  .slider .slide {
+    flex: 0 0 100%;
+    padding: 50px 58px 34px 58px;
+
+    box-sizing: border-box;
+  }
+
+  
+  .controls {
+    text-align: center;
+  }
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+  .controls button {
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+
+  .slyder__title{
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 90px;
+  }
+  
+
+
+  .slides > div > p:not(:last-child){
+    margin: 0px 0px 15px 0px;
+    max-width: 990px;
+  }
+  
+  .slider__block{
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 20px 3px #e06121, 0 0 15px 1px #e06121, inset 0 0 1.3rem #e06121;
+    border-radius: 15px;
+
+    margin-bottom: 30px;
+  }
+
+  .popup__close{
+    margin-top: 32px;
+    margin-right: 40px;
+  }
+
+  .btn__previous{
+    position: absolute;
+    top: 400px;
+    right: 90%;
+    cursor: pointer;
+  }
+  
+  .btn__next{
+    position: absolute;
+    top: 400px;
+    right: 7%;
+    cursor: pointer;
+  }
+
+
+  @keyframes popupOpen {
+    from { transform: translate(-50%, -50%) scale(0); } /* Начальное состояние */
+    to { transform: translate(-50%, -50%) scale(1); } /* Конечное состояние */
+  }
+  @keyframes popupClose {
+    from { transform: translate(-50%, -50%) scale(1); } /* Начальное состояние */
+    to { transform: translate(-50%, -50%) scale(0); } /* Конечное состояние */
+  }
+  
+  @media (max-width: 1500px) {
+
+    .slyder__title{
+      margin-bottom: 42px;
+    }
+    .btn__previous{
+      position: absolute;
+      top: 600px;
+      right: 60%;
+      cursor: pointer;
+    }
+    
+    .btn__next{
+      position: absolute;
+      top: 600px;
+      right: 37%;
+      cursor: pointer;
+    }
+
+    .popup {
+      padding: 0px 120px 150px 120px;
+    }
+  
+  }
+
+
+    @media (max-width: 1460px) {
+
+      .slyder__title{
+        margin-bottom: 42px;
+      }
+      .btn__previous{
+        position: absolute;
+        top: 440px;
+        right: 60%;
+        cursor: pointer;
+      }
+      
+      .btn__next{
+        position: absolute;
+        top: 440px;
+        right: 37%;
+        cursor: pointer;
+      }
+  
+      .popup {
+        padding: 0px 120px 150px 120px;
+      }
+    
+    }
+
+    @media (max-width: 1240px) {
+
+      .slyder__title{
+        margin-bottom: 42px;
+      }
+      .btn__previous{
+        position: absolute;
+        top: 470px;
+        right: 60%;
+        cursor: pointer;
+      }
+      
+      .btn__next{
+        position: absolute;
+        top: 470px;
+        right: 37%;
+        cursor: pointer;
+      }
+  
+      .popup {
+        padding: 0px 120px 150px 120px;
+      }
+    
+    }
+    @media (max-width: 1024px) {
+
+      p{
+        font-size: 10px;
+      }
+      
+      h3 {
+        font-size: 16px;
+      }
+    
+      .btn__previous{
+        position: absolute;
+        top: 420px;
+        right: 60%;
+        cursor: pointer;
+      }
+      
+      .btn__next{
+        position: absolute;
+        top: 420px;
+        right: 37%;
+        cursor: pointer;
+      }}
+
+      @media (max-width: 900px) {
+        .popup {
+          padding: 0px 10px 140px 10px;
+        }
+        .close-btn{
+          z-index: 5;
+        }
+        .slider__block{
+          border:none;
+          box-shadow: none;
+          border-radius: none;
+      
+          margin-bottom: 30px;
+        }
+
+        .slider .slide {
+          flex: 0 0 100%;
+          padding: 20px 58px 34px 58px;
+          box-sizing: border-box;
+        }
+        .slyder__title{
+          margin-bottom: 20px;
+        }
+        }
+
+        @media (max-width: 700px) {
+          .popup {
+            padding: 0px 10px 140px 10px;
+          }
+  
+          .slider__block{
+
+        
+            margin-bottom: 30px;
+          }
+  
+          .slider .slide {
+            flex: 0 0 100%;
+            padding: 20px 18px 34px 18px;
+            box-sizing: border-box;
+          }
+          .slyder__title{
+            margin-bottom: 20px;
+          }
+          }
+
+          @media (max-width: 500px) {
+            
+            .close-btn{
+              width: 30px;
+              height: 30px;
+            }
+            .btn__previous{
+              width: 25px;
+            }
+            
+            .btn__next{
+              width: 25px;
+            }
+
+            .popup{
+              padding-bottom: 80px;
+            }
+              }
+  
+       
+             
+      
+                @media (max-width: 360px) {
+                  
+                  
+                  .btn__previous{
+                    width: 17px;
+                  }
+                  
+                  .btn__next{
+                    width: 17px;
+                  }
+      
+                  .popup{
+                    padding-bottom: 50px;
+                  }
+                  .slyder__title{
+                    margin-bottom: 5px;
+                  }
+                    }
+

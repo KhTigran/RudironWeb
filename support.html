@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Support</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/support.css">
+	<link rel="stylesheet" href="css/main-media.css">
+	<link rel="stylesheet" href="css/support-media.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header id="header" class="header">
+			<div class="header__container _container">
+				<a href="index.html" class="header__logo">
+					<img src="img/logo.svg" alt="logo" class="logo">
+				</a>
+				<button aria-label="Меню" class="header__burger button-reset"></button>
+				<nav class="header__menu menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="index.html" class="menu__link">Главная</a>
+						</li>
+						<li class="menu__item">
+							<a href="docs.html" class="menu__link">Документация</a>
+						</li>s
+						<li class="menu__item">
+							<a href="" class="menu__link">Модули</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link">Поддержка</a>
+						</li>
+					</ul>
+				</nav>
+			</div>		
+		</header>	
+		<main id="main" class="main">
+			<!-- <div class="head-ellipse ellipse"></div> -->
+			<div class="main__container _container">
+				<h2 class="main__title">ПОДДЕРЖКА</h2>
+				<p class="main__text">Мы всегда рады получать обратную связь. Если у Вас есть вопросы, 
+					предложения или возникла какая-нибудь проблема, Вы всегда можете связаться с нами. 
+					Заполните небольшую форму для отправки и мы обязательно свяжемся с Вами!</p>
+                <div class="form__container _container">
+                    <form id="form" name="form" class="form__block">
+						<label class="form__input-frame">
+							<input id="name" data-validate-field="name" name="name" placeholder="ФИО" type="text" class="form__input-name _input" required>
+						</label>
+						<label class="form__input-frame">
+							<input id="mail" data-validate-field="mail" name="mail" placeholder="Почта" type="email" class="form__input-mail _input" required>
+						</label>
+						<label class="form__textarea-frame">
+							<textarea name="message" data-validate-field="message" placeholder="Ваше сообщение..." class="form__textarea _input" required></textarea>
+						</label>
+						<label class="form__check">
+							<input name="agree" type="checkbox" class="form__checkbox" required>
+							<span class="form__check-text">
+								Нажимая на кнопку, вы даете согласие на обработку 
+								<a href="" class="form__link">персональных данных</a> и соглашаетесь c 
+								<a href="" class="form__link">политикой конфиденциальности</a>
+							</span>
+						</label>
+                        <button class="form__post-btn button-two popup-btn" type="submit">Отправить</button>
+                    </form>
+                </div>
+			</div>
+		</main>
+		<footer id="footer" class="footer">
+			<div class="footer__container _container">
+				<h2 class="footer__title">БУДУЩЕЕ ЗА НАМИ</h2>
+			
+			<div class="footer__info">
+				<div class="info-download">
+					<div class="info-download__block">
+						<p class="info-download__text">Скачайте дистрибутив рудирона,
+							сочетающего в себе высокую производительность, разнообразные интерфейсы, множество
+							цифровых портов и удобные возможности подключения внешних устройств</p>
+						<a href="" class="info-download__button button-one">Скачать дистрибутив<span class="button__download-icon"></span></a>
+					</div>
+					<p class="info-download__company-title">OOO «Орион»</p>
+				</div>
+				<div class="info-contact">
+					<p class="info-contact__title">Адрес</p>
+					<p class="info-contact__text">г.Москва, ул.Косинская, д.9</p>
+					<p class="info-contact__title">Телефон</p>
+					<p class="info-contact__text">+7 (499) 374 - 94 - 00</p>
+					<p class="info-contact__title">Почта</p>
+					<p class="info-contact__text">orion@orion-ir.ru</p>
+					<p class="info-contact__title">Доп.ссылки</p>
+					<a href="" class="info-contact__link">Пользовательское соглашение</a>
+					<a href="" class="info-contact__link">Политика конфиденциальности</a>
+					<p class="info-contact__company-title">OOO «Орион»</p>
+				</div>	
+			</div>
+			<div class="footer__social-media">
+				<a href="">
+					<img class="footer__icon" src="img/social media/vk.svg" alt="">
+				</a>
+				<a href="">
+					<img class="footer__icon" src="img/social media/tg.svg" alt="">
+				</a>
+				<a href="">
+					<img class="footer__icon" src="img/social media/insta.svg" alt="">
+				</a>
+			</div>
+			</div>
+			<div class="footer__ellipse ellipse"></div>
+		</footer>
+	</div>
+	<div id="form-success" class="popup js-popup">
+		<div class="popup__body">
+			<div class="popup__content">
+				<button class="popup__close">
+					<img src="img/forms/popup-close.svg" alt="" class="popup__close js-popup-close">
+				</button>
+				<img src="img/forms/popup-icon.svg" alt="" class="popup__icon">
+				<h2 class="popup__title">Сообщение отправлено</h2>
+				<p class="popup__text">
+					Спасибо за ваше обращения! Мы очень ценим Ваш интерес к нашей компании. Мы постараемся ответить Вам в ближайшее время!
+				</p>
+				<p class="popup__calling">
+					C уважением, <span class="popup__name">***</span>
+				</p>
+			</div>
+		</div>
+	</div>
+	<script src="libs/just-validate.min.js"></script>
+	<script src="scripts/main.js"></script>
+</body>
+</html>

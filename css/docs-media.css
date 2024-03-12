@@ -1,0 +1,331 @@
+@media (max-width: 1500px) {
+    .head__title-doc {
+        font-size: 50px;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list__item {
+        width: 700px;
+    }
+
+    .list__item:not(:nth-child(2n)) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .list__item:not(:nth-last-child(2n)) {
+        margin-bottom: 0;
+    }
+
+    .list__item:not(:last-child) {
+        margin-bottom: 47px;
+    }
+    
+
+    .install__descr {
+        max-width: 100%;
+        line-height: 125%;
+    }
+
+    .lessons__descr {
+        max-width: 100%;
+        line-height: 125%;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .main__container {
+        padding: 0 78px;
+    }
+
+    .header {
+        margin-bottom: 29px;
+    }
+
+    .head__title-doc {
+        font-size: 32px;
+        margin-bottom: 13px;
+        margin-left: 0;
+        line-height: 110%;
+    }
+    
+    .head__title-doc-back {
+        position: absolute;
+        color: transparent;
+        -webkit-text-stroke: #e06121 1px;
+        transform: translateX(.7%) translateY(4px);
+    }
+
+    .head__container {
+        padding: 37px 26px 50px;
+        margin-bottom: 108px;
+    }
+
+    .head__text {
+        margin-bottom: 20px;
+        width: 50%;
+    }
+
+    .head__year {    
+        -webkit-text-stroke: #2c2c2c 1px;
+    }    
+
+    .head__year {
+        margin-bottom: 20px;
+        font-size: 40px;
+        letter-spacing: normal;
+    }
+
+    .head__button {
+        font-size: 11px;
+        padding: 3px 16px;
+        min-width: fit-content;
+    }
+
+    .head__button:not(:last-child) {
+        margin-right: 42px;
+    }
+
+    .button__download-icon {
+        margin-left: 2px;
+        height: 10px;
+        width: 10px;
+        background-size: 100% 100%;
+    }
+
+    .install__title {
+        margin-left: 0;
+        margin-bottom: 11px;
+    }
+
+    .install__descr {
+        margin-bottom: 46px;
+        margin-left: 0;
+        width: 70%;
+        text-align: center;
+    }
+
+    .list {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 86px;
+    }
+    
+    .list__item {
+        height: 115px;
+        width: 230px;
+    }
+    
+    .list__item::after {
+        top: 0;
+        left: 0;
+        width: 120%;
+        height: 100%;
+        background-size: 100% 120%;
+        background-position: -23px;
+    }
+    
+    .list__item:not(:nth-child(2n)) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .list__item:not(:nth-last-child(2n)) {
+        margin-bottom: 0;
+    }
+
+    .list__item:not(:last-child) {
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+    .list__item:last-child {
+        margin-bottom: 20px;
+    }
+
+    .list__item {
+        margin-bottom: 20px;
+    }
+    
+    .list__image {
+        margin-top: -9px;
+        margin-left: 3px;
+        margin-right: 19px;
+        height: 100%;
+        width: 32%;
+        background-position: 0;
+        background-size: 100% 100%;
+    }
+    
+    .list__icon {
+        position: absolute;
+        transform: translateX(10px) translateY(10px);
+        width: 80%;
+        height: 80%;
+    }
+    
+    .list__title {
+        margin-top: 34px;
+        margin-bottom: 5px;
+        font-size: 15px;
+        letter-spacing: 0;
+        line-height: 18.75px;
+    }
+    
+    .list__link {
+        font-size: 8px;
+        max-width: 50%;
+        width: 50%;
+        line-height: 125%;
+    }
+
+    .lessons__container {
+        max-width: 600px;
+        margin-bottom: 131px;
+    }
+
+    .lessons__title {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .lessons__descr {
+        margin-left: 0;
+        margin-bottom: 18px;
+        width: 100%;
+        line-height: 125%;
+    }
+
+    .lessons__list {
+        display: none;
+    }
+
+    .lessons__swiper {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-wrapper {
+        margin-bottom: 10px;
+    }
+    
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+    
+    .swiper-pagination {
+        z-index: 1000;
+    }
+    
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: auto;
+    }
+    
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+        margin: 0 5.5px;
+    }
+    
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        opacity: 1;
+        background: none;
+        border: 1px solid #fff;
+        border-radius: 100%;
+        background-color: transparent;
+    }
+    
+    .swiper-pagination-bullet-active {
+        background-color: #fff;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .main__container {
+        padding: 0 15px;
+    }
+
+    .header {
+        margin-bottom: 29px;
+    }
+
+    .head__title-doc {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .head__title-doc-back {
+        position: absolute;
+        color: transparent;
+        -webkit-text-stroke: #e06121 1px;
+        transform: translateX(1.2%) translateY(3px);
+    }
+
+    .head__container {
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        margin-bottom: 81px;
+    }
+
+    .head__title-doc-back {
+        transform: translateX(1.2%) translateY(3px);
+    }
+
+    .head__text {
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .head__year {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+
+    .head__button {
+        padding: 0 5px;
+    }
+
+    .head__button:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .install__descr {
+        width: 100%;
+        margin-bottom: 22px;
+    }
+
+    .list {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 166px;
+    }
+
+    .list__item {
+        margin-bottom: 0;
+    }
+
+    .list__item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 26px;
+    }
+}
