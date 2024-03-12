@@ -1,0 +1,68 @@
+<svg width="1517" height="767" viewBox="0 0 1517 767" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_0_364)">
+<path d="M1378.55 179L1423.53 229.104" stroke="#FF6A00" stroke-width="20"/>
+</g>
+<g filter="url(#filter1_f_0_364)">
+<path d="M368.149 357L392.568 383.979" stroke="#FF6A00" stroke-width="20"/>
+</g>
+<g filter="url(#filter2_f_0_364)">
+<path d="M1459.58 708L1484 734.979" stroke="#FF6A00" stroke-width="20"/>
+</g>
+<g filter="url(#filter3_f_0_364)">
+<path d="M294.342 31L270.996 69.7329" stroke="#FF6A00" stroke-width="20"/>
+</g>
+<g filter="url(#filter4_f_0_364)">
+<path d="M1223.49 21L1242.77 41.5553" stroke="#FF6A00" stroke-width="4"/>
+</g>
+<g filter="url(#filter5_f_0_364)">
+<path d="M457.185 721L476.463 741.555" stroke="#FF6A00" stroke-width="4"/>
+</g>
+<g filter="url(#filter6_f_0_364)">
+<path d="M10.2671 179L15.5698 205.165" stroke="#FF6A00" stroke-width="4"/>
+</g>
+<g filter="url(#filter7_f_0_364)">
+<path d="M905 304L930.694 330.979" stroke="#FF6A00" stroke-width="20"/>
+</g>
+<defs>
+<filter id="filter0_f_0_364" x="1346.11" y="147.319" width="109.865" height="113.465" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="12.5" result="effect1_foregroundBlur_0_364"/>
+</filter>
+<filter id="filter1_f_0_364" x="335.735" y="325.289" width="89.2471" height="90.4" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="12.5" result="effect1_foregroundBlur_0_364"/>
+</filter>
+<filter id="filter2_f_0_364" x="1427.17" y="676.289" width="89.2471" height="90.4" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="12.5" result="effect1_foregroundBlur_0_364"/>
+</filter>
+<filter id="filter3_f_0_364" x="237.429" y="0.838806" width="90.4795" height="99.0553" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="12.5" result="effect1_foregroundBlur_0_364"/>
+</filter>
+<filter id="filter4_f_0_364" x="1214.03" y="11.6318" width="38.1958" height="39.2916" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="4" result="effect1_foregroundBlur_0_364"/>
+</filter>
+<filter id="filter5_f_0_364" x="447.726" y="711.632" width="38.1958" height="39.2916" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="4" result="effect1_foregroundBlur_0_364"/>
+</filter>
+<filter id="filter6_f_0_364" x="0.306641" y="170.603" width="25.2236" height="42.9597" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="4" result="effect1_foregroundBlur_0_364"/>
+</filter>
+<filter id="filter7_f_0_364" x="872.759" y="272.103" width="90.1768" height="90.772" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="12.5" result="effect1_foregroundBlur_0_364"/>
+</filter>
+</defs>
+</svg>
