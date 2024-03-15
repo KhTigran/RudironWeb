@@ -76,6 +76,7 @@
 	margin: 0 auto;
 	text-align: center;
 	margin-bottom: 75px;
+	max-width: 1000px;
 }
 
 .from-whom__cards{
@@ -87,7 +88,7 @@
 
 .from-whom__card{
 	border: 2px solid white;
-	border-radius: 15px;
+	border-radius: 14px;
 	
 	width: 32%;
 	
@@ -195,6 +196,7 @@
 	background-image: url(../img/about-wall.svg);
 	background-repeat: no-repeat;
 	background-position: 50% 85%;
+	background-size: 160%;
 }
 
 .for-whom{
@@ -274,14 +276,15 @@ h2{
 	}
 }
 @media (max-width: 1800px){
-	.main__title{
-		font-size: 42px;
-	}
+
 
 	.rudiron-inf__image {
     width: 50%;
 	height: 50%;
 }
+.server-inf__card {
+    width: 432px;}
+
 	.rudiron-inf__text{
 		max-width: 800px;
 	}
@@ -295,17 +298,38 @@ h2{
 		margin-left: 15px;
 		margin-right: 15px;
 	}
+	.rudiron-inf__image{
+		display: none;
+	}
+	.rudiron-inf{
+		background-image: url(../img/rudiron.png);
+		background-repeat: no-repeat;
+		background-size: 50%;
+		background-position: 100% 50%;
+	}
+	.server-card__text {
+		max-width: 365px;
+	}
+
+
 }
+
 @media (max-width: 1558px) {
 	.main__offer {
 		justify-content: center;
 	}
+	.main__title{
+		font-size: 68px;
+	}
+	.main__text {
+		max-width: 698px;
 	.rudiron-inf__image{
 		position: relative;
 		right: 67px;
 		width: 45%;
 		left: 25px;
 	}
+	
 
 	.rudiron-inf__text{
 		max-width: 680px;
@@ -313,9 +337,7 @@ h2{
 
 
 
-	h2{
-		font-size: 38px;
-	}
+
 
 	.rudiron-infmini__block1 {
 		margin-right: 35px;
@@ -329,7 +351,7 @@ h2{
 	}
 
 	.from-whom__card {
-		width: 380px;
+		width: 412px;
 	}
 	
 	.cardinftext {
@@ -341,13 +363,11 @@ h2{
 		padding-left: 0px;
 		padding-right: 0px;
 	}
-	h3 {
-		font-size: 24px;
-	}
+
 
 	.from-whom__cards {
-		margin-left: 20px;
-		margin-right: 20px;
+		margin-left: 45px;
+		margin-right: 45px;
 	}
 	.rudiron-infmini__title{
 		position: relative;
@@ -358,17 +378,49 @@ h2{
 			width: 132px;
 			bottom: 0;
 			height: 2px;
-			right: 195px;
+			right: 207px;
 			border: 1px solid #fff;
 			background-color: #ffffff;
 			margin: 0 0 0 -25px;
 			box-shadow: 0 0 20px 3px #e06121, 0 0 15px 1px #e06121, inset 0 0 1.3rem #e06121;
 		}
 	}
+	
+	}
 }
 
 @media (max-width: 1460px) {
-
+	.for-whom-section {
+		padding: 65px 30px;
+	}
+	.about__text{
+		margin-bottom: 65px;
+	}
+	.about__buttons {
+    	max-width: 760px;
+}
+	.main__image {
+		max-width: 40%;
+	}
+	h3 {
+		font-size: 28px;
+	}
+	.text18{
+		font-size: 18px;
+	}
+	p{
+		font-size: 16px;
+	}
+	.main__text{
+		max-width: 580px;
+		margin-bottom: 52px;
+	}
+	.rudiron-inf{
+		background-image: url(../img/rudiron.png);
+		background-repeat: no-repeat;
+		background-size: 50%;
+		background-position: 100% 50%;
+	}
 	.rudiron-infmini__title{
 		position: relative;
 		padding: 0 0 20px 0;
@@ -385,9 +437,7 @@ h2{
 			box-shadow: 0 0 20px 3px #e06121, 0 0 15px 1px #e06121, inset 0 0 1.3rem #e06121;
 		}
 	}
-	p{
-		font-size: 14px;
-	}
+	
 
 	.from-whom__card1{
 		margin-left: 20px;
@@ -395,10 +445,15 @@ h2{
 	}
 
 	.from-whom__card {
-		width: 280px;
-		max-height: 340px;
+		width: 320px;
+		height: 380px;
 	}
-	
+
+	.cardinftext {
+		padding-left: 15px;
+		padding-top: 17px;
+		padding-right: 12px;
+	}
 	.for-whom{
 		padding-left: 50px;
 		padding-right: 50px;
@@ -409,10 +464,12 @@ h2{
 	}
 	
 	.server-inf__card{
-		width: 340px;
 		height: 440px;
-		max-width: 320px;
+		max-width: 360px;
 		padding-right: 10px;
+	}
+	.server-card__text{
+		max-width: 280px;
 	}
 
 
@@ -429,17 +486,40 @@ h2{
 	.about__text{
 		max-width: 590px;
 	}
-	.main__image {
-		max-width: 40%;
-	}
+	
 	.main__offer{
 		margin-top: 0;
 	}
 
+	.server-card__title {
+		margin-bottom: 25px;
+	}
+	
 
 }
-
+@media (max-width: 1320px) {
+	.main__title {
+		font-size: 62px;
+	}
+	h2{
+		font-size: 52px;
+	}
+}
 @media (max-width: 1200px) {
+	h2{
+		font-size: 46px;
+	}
+	.section {
+		background-size: 200%;
+	}
+	.rudiron-inf__text{
+		max-width: 520px;
+	}
+	.server-inf__card{
+		height: 440px;
+		max-width: 320px;
+		padding-right: 10px;
+	}
 	.rudiron-infmini__stroke1{
 		margin-bottom: 42px;
 	}
@@ -456,6 +536,12 @@ h2{
 
 
 @media (max-width: 1070px) {
+	.main__image {
+		max-width: 48%;
+	}
+	.server-card__img{
+		margin-bottom: 22px;
+	}
 	.rudiron-infmini__title{
 		position: relative;
 		padding: 0 0 20px 0;
@@ -466,6 +552,22 @@ h2{
 			bottom: 0;
 			height: 2px;
 			right: 56px;
+			border: 1px solid #fff;
+			background-color: #ffffff;
+			margin: 0 0 0 -25px;
+			box-shadow: 0 0 20px 3px #e06121, 0 0 15px 1px #e06121, inset 0 0 1.3rem #e06121;
+		}
+	}
+	.rudiron-infmini__title2{
+		position: relative;
+		padding: 0 0 20px 0;
+		&::after{
+			content: '';
+			position: absolute;
+			width: 102px;
+			bottom: 0;
+			height: 2px;
+			right: 71px;
 			border: 1px solid #fff;
 			background-color: #ffffff;
 			margin: 0 0 0 -25px;
@@ -517,8 +619,12 @@ h2{
 	}
 
 	.server-inf__card{
-		height: 340px;
-		width: 320px;
+		height: 400px;
+		max-width: 360px;
+	}
+
+	.server-card__text{
+		max-width: 290px;
 	}
 
 	.server-card__title{
@@ -530,18 +636,59 @@ h2{
 }
 
 @media (max-width: 1024px) {
-
+	
+	.rudiron-infmini__title2{
+		position: relative;
+		padding: 0 0 20px 0;
+		&::after{
+			content: '';
+			position: absolute;
+			width: 102px;
+			bottom: 0;
+			height: 2px;
+			right: 58px;
+			border: 1px solid #fff;
+			background-color: #ffffff;
+			margin: 0 0 0 -25px;
+			box-shadow: 0 0 20px 3px #e06121, 0 0 15px 1px #e06121, inset 0 0 1.3rem #e06121;
+		}
+	}
+	.rudiron-inf__text{
+		margin-bottom: 45px;
+	}
+	
+	.main__title{
+		font-size: 52px;
+	}
 	.main__text {
-		max-width: 600px;
-		margin-bottom: 42px;
+		max-width: 520px;
+		margin-bottom: 38px;
 	}
 
 	.from-whom__card {
 		width: 210px;
 	}
-
+	.about__title{
+		font-size: 34px;
+	}
+	.for-whom__title{
+		font-size: 34px;
+	}
+	.rudiron-inf__title{
+		font-size: 34px;
+	}
+	.server-inf__title{
+		font-size: 34px;
+	}
 	h3 {
-		font-size: 16px;
+		font-size: 21px;
+	}
+	.text18{
+		font-size: 11px;
+	}
+	.from-whom__card{
+		height: 300px;
+		width: 260px;
 	}
 
 	.cardinftext {
@@ -561,9 +708,25 @@ h2{
 		height: 54px;
 		font-size: 10px;
 	}
+	.server-inf__card{
+		height: 340px;
+	}
 }
 
 @media (max-width: 800px) {
+	.rudiron-infmini__block1 {
+		margin-right: 40px;
+	}
+	.main__text{
+		max-width: 520px;
+	}
+	.section {
+		background-size: 210%;
+		background-position: 50% 55%;
+	}
+	.about__text{
+		max-width: 520px;
+	}
 	.rudiron-infmini__stroke1{
 		margin-bottom: 42px;
 	}
@@ -599,8 +762,67 @@ h2{
 	}
 }
 
+@media (max-width: 650px) {
+	
 
+	.main__title{
+		font-size: 42px;
+	}
+	.main__title-shadow {
+		position: absolute;
+		-webkit-text-stroke: 2px #E06121;
+		color: rgb(0, 0, 0, 0);
+		left: 14px;
+		top: 8px;
+		z-index: -1;
+	}
+	.main__text {
+		max-width: 420px;
+	}
+	.about__title{
+		font-size: 26px;
+	}
+	.for-whom__title{
+		font-size: 26px;
+	}
+	.rudiron-inf__title{
+		font-size: 26px;
+	}
+	.server-inf__title{
+		font-size: 26px;
+	}
+	.about__text{
+		max-width: 420px;
+		margin-bottom: 35px;
+	}
+	.server-inf__title{
+		max-width: 500px;
+	}
+}
 @media (max-width: 480px) {
+	.server-card__title {
+		margin-left: 8px;}
+	.info-download__button{
+		font-size: 10px;
+	}
+	.cardinftext{
+		padding: 0;
+	}
+	.from-whom__card{
+		height: 250px;
+	}
+	.about__title{
+		font-size: 20px;
+	}
+	.for-whom__title{
+		font-size: 20px;
+	}
+	.rudiron-inf__title{
+		font-size: 20px;
+	}
+	.server-inf__title{
+		font-size: 20px;
+	}
 	.main__offer {
 		justify-content: space-between;
 	}
@@ -611,7 +833,7 @@ h2{
 	}
 
 	.main__image {
-		max-width: 60%;
+		max-width: 100%;
 	}
 	body{
 		font-size: 11px;
@@ -634,20 +856,22 @@ h2{
 	.main__text{
 		margin-top: 10px;
 		margin-bottom: 25px;
+		max-width: 285px;
 	}
 
 
+
+	.info-download__button {
+		padding-left: 0px; 
+	}
 	.button-two{
-		padding-left: 50px;
-		padding-right: 50px;	
-		padding-top: 23px;
-		padding-bottom: 23px;
-	}
+		width: 144px;
 
+		height: 31px;
+	}
 	.button-one{
 		width: 154px;
-		padding-top: 23px;
-		padding-bottom: 23px;
+		height: 31px;
 	}
 	.info-download__button{
 		width: 154px;
@@ -698,7 +922,7 @@ h2{
 	
 
 	.card__title {
-		margin-top: 4px;
+		margin-top: 10px;
 		margin-left: 12.4px;
 		margin-bottom: 3px;
 	}
@@ -828,7 +1052,7 @@ display: none;
 
 .server-card__text{
 	width: 164px;
-	margin-left: 7px;
+	margin-left: 8px;
 }
 .server-inf__cards{
 	margin-bottom: 90px;
@@ -842,7 +1066,10 @@ display: none;
 }
 
 .button-two{
-	width: 144px;
+	height: 31px;
+	font-size: 10px;
+}
+.button-one{
 	height: 31px;
 	font-size: 10px;
 }
@@ -852,9 +1079,17 @@ display: none;
 	height: 31px;
 	font-size: 10px;
 }
+.button__download-icon {
+	margin-left: 10px;
+	width: 10px;
+	height: 10px;
+	background-image: url(../img/downld_icon.svg);
+	background-repeat: no-repeat;
+}
 }
 
 @media (max-width: 340px) {
+	
 	.rudiron-infmini__title{
 		position: relative;
 		padding: 0 0 20px 0;
