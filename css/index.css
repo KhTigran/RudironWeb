@@ -907,6 +907,7 @@ h2{
 	.section{
 		background-image: url(../img/second_page.svg);
 		background-position: 50% 0%;
+		background-size: inherit;
 	}
 	.for-whom-section{
 		width: 300px;
