@@ -276,7 +276,15 @@ h2{
 	}
 }
 @media (max-width: 1800px){
-
+	.cardinftext {
+    padding-left: 25px;
+    padding-top: 22px;
+    padding-right: 5px;
+}
+	.card__text {
+    max-width: 416px;
+    margin-bottom: 50px;
+}
 
 	.rudiron-inf__image {
     width: 50%;
