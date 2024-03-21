@@ -546,9 +546,19 @@ h2{
 		background-size: 50%;
 		background-position: 100% 50%;
 	}
+}@media (max-width: 1190px) {
+.from-whom__cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-
+}
+	
+@media (max-width: 1120px) {
+.main__title {
+    font-size: 56px;
+}
+}
 @media (max-width: 1070px) {
 	.main__image {
 		max-width: 48%;
