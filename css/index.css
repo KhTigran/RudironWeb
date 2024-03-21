@@ -277,9 +277,7 @@ h2{
 }
 @media (max-width: 1800px){
 	.cardinftext {
-    padding-left: 25px;
-    padding-top: 22px;
-    padding-right: 5px;
+    padding-left: 20px;
 }
 	.card__text {
     max-width: 435px;
@@ -312,7 +310,7 @@ h2{
 	.rudiron-inf{
 		background-image: url(../img/rudiron.png);
 		background-repeat: no-repeat;
-		background-size: 50%;
+		background-size: 45%;
 		background-position: 100% 50%;
 	}
 	.server-card__text {
@@ -321,7 +319,12 @@ h2{
 
 
 }
+@media (max-width: 1635px){
+	h3 {
+    font-size: 34px;
+}
 
+	
 @media (max-width: 1558px) {
 	.main__offer {
 		justify-content: center;
@@ -398,6 +401,10 @@ h2{
 }
 
 @media (max-width: 1460px) {
+	.rudiron-infmini__stroke1 {
+    display: flex;
+    margin-bottom: 60px;
+}
 	.for-whom-section {
 		padding: 65px 30px;
 	}
@@ -422,12 +429,6 @@ h2{
 	.main__text{
 		max-width: 580px;
 		margin-bottom: 52px;
-	}
-	.rudiron-inf{
-		background-image: url(../img/rudiron.png);
-		background-repeat: no-repeat;
-		background-size: 50%;
-		background-position: 100% 50%;
 	}
 	.rudiron-infmini__title{
 		position: relative;
@@ -513,6 +514,11 @@ h2{
 		font-size: 52px;
 	}
 }
+@media (max-width: 1320px) {
+	.rudiron-inf__text {
+    max-width: 580px;
+}
+}	
 @media (max-width: 1200px) {
 	h2{
 		font-size: 46px;
