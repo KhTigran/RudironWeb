@@ -660,7 +660,9 @@ h2{
 }
 
 @media (max-width: 1024px) {
-	
+	.footer__title{
+	font-size:32px;
+	}
 	.rudiron-infmini__title2{
 		position: relative;
 		padding: 0 0 20px 0;
@@ -689,9 +691,7 @@ h2{
 		margin-bottom: 38px;
 	}
 
-	.from-whom__card {
-		width: 210px;
-	}
+
 	.about__title{
 		font-size: 34px;
 	}
